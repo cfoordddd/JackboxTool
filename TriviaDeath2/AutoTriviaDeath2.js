@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         AutoTriviaDeath2
-// @namespace    https://github.com/cfoordddd/JackboxTool/TriviaDeath2
+// @namespace    https://github.com/cfoordddd/JackboxTool
 // @version      0.4.0
 // @description  Trivia Murder Party 2 - Auto Helper
 // @author       cfoordddd
 // @match        https://jackbox.tv/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=brave.com
-// @resource     TDQuestion    https://raw.githubusercontent.com/cfoordddd/AutoTMP2/master/data/TDQuestion.json
-// @resource     TDFinalRound  https://raw.githubusercontent.com/cfoordddd/AutoTMP2/master/data/TDFinalRound.json
-// @resource     TDDictation   https://raw.githubusercontent.com/cfoordddd/AutoTMP2/master/data/TDDictation.json
+// @resource     TDQuestion    https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDQuestion.json
+// @resource     TDFinalRound  https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDFinalRound.json
+// @resource     TDDictation   https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDDictation.json
 // @grant        GM_getResourceText
 // @run-at       document-idle
 // ==/UserScript==
