@@ -1,0 +1,9 @@
+<div id="controller" class="state-controller controller-content">
+    <div id="prompt" class="prompt text"><div style=""><div class="text">About how many detective novels did Agatha Christie write?</div></div></div>
+    <div class="error text-danger" style="display: none;"></div>
+    <div id="choicesRegion"><div class="choices"><div class="button-group btn-group btn-block"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="0" data-key="" style="">16</button><button data-action="choose" class="button check-button btn btn-lg"></button></div><div class="button-group btn-group btn-block"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="1" data-key="" style="">33</button><button data-action="choose" class="button check-button btn btn-lg"></button></div><div class="button-group btn-group btn-block"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="2" data-key="" style="">66</button><button data-action="choose" class="button check-button btn btn-lg"></button></div><div class="button-group btn-group btn-block"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="3" data-key="" style="">112</button><button data-action="choose" class="button check-button btn btn-lg"></button></div></div></div>
+    <div id="chosen" class="chosen text"></div>
+    <div class="makeSingleChoiceDone" style="display: none;">
+        <span class="doneText"></span>
+    </div>
+</div>

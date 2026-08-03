@@ -1,0 +1,684 @@
+<div id="controller" class="state-controller controller-content">
+        <form class="enterSingleTextForm">
+            <fieldset class="enterSingleTextFieldset">
+                <div id="prompt" class="prompt"><div style=""><div class="text">Dear Police,</div></div></div>
+                <div id="input-region" class=""><div class="input" style="display: block;"><form>
+    <div class="form-group">
+        <div class="inputGroup">
+            <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="false" spellcheck="false" maxlength="512" placeholder="TYPE LETTER HERE" style="overflow-x: hidden; overflow-wrap: break-word; height: 46px;"></textarea>
+            <span class="inlineSubmit" style="display:none;">
+                <button type="submit" class="btn btn-default inlineSubmitButton"><span class="inlineSubmitText">Submit</span></button>
+            </span>
+            <span id="helpBlock2" class="help-block errorText" style="display: none;"></span>
+            <div class="charCountDisplay" style="display: none;"><span class="charRemaining">512</span></div>
+        </div>
+    </div>
+</form></div></div>
+                <div id="buttons" class=""><div class="choices"></div></div>
+            </fieldset>
+        </form>
+        <div class="enterSingleTextDone" style="display: none;">
+            <span class="doneText"></span>
+        </div>
+    </div>
+
+
+```console sample
+[WSClient:CIPHER] recv <- {
+  "pc": 141,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "Get Ready"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 15,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: Get Ready
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 146,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "Dear Police,"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 16,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: Dear Police,
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 321,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "Congratulations!"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 17,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: Congratulations!
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 323,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "You've won a free trip to Fiji!"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 18,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: You've won a free trip to Fiji!
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 326,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "All you have to do is leave immediately"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 19,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: All you have to do is leave immediately
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 329,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "and ask no follow-up questions."
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 20,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: and ask no follow-up questions.
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 332,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "It is a once in a lifetime opportunity."
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 21,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: It is a once in a lifetime opportunity.
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 334,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "Just ignore your ongoing investigations"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 22,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: Just ignore your ongoing investigations
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 338,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": false,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "and get on a plane!"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 23,
+    "from": 1
+  }
+}
+userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88 [Auto-TMP2] no answer match for prompt: and get on a plane!
+tick @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:88
+(anonymous) @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:98
+requestAnimationFrame
+schedule @ userscript.html?name=Auto-TMP2.user.js&id=9aca6866-8c3d-433f-bde0-616b8d3c7533:96
+childList
+(anonymous) @ BaU_7e-3.js:22
+Ne @ BaU_7e-3.js:22
+html @ BaU_7e-3.js:22
+update @ BaU_7e-3.js:39
+u @ BaU_7e-3.js:39
+J @ BaU_7e-3.js:39
+(anonymous) @ BaU_7e-3.js:39
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+update @ BaU_7e-3.js:328
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:219
+(anonymous) @ BaU_7e-3.js:563
+Be @ BaU_7e-3.js:1
+i @ Uqe3-NtU.js:112
+setTimeout
+(anonymous) @ Uqe3-NtU.js:112
+(anonymous) @ BaU_7e-3.js:1
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+setBlob @ BaU_7e-3.js:563
+Q @ BaU_7e-3.js:25
+X @ BaU_7e-3.js:25
+F @ BaU_7e-3.js:25
+B.trigger @ BaU_7e-3.js:25
+set @ BaU_7e-3.js:25
+onEntityDidChange @ BaU_7e-3.js:563
+r.emitEvent @ BaU_7e-3.js:578
+r.emit @ BaU_7e-3.js:578
+onObject @ BaU_7e-3.js:578
+At.emit @ BaU_7e-3.js:50
+onNotification @ BaU_7e-3.js:126
+conn.onmessage @ BaU_7e-3.js:126
+Uqe3-NtU.js:112 [WSClient:CIPHER] recv <- {
+  "pc": 342,
+  "opcode": "object",
+  "result": {
+    "key": "bc:customer:61dbdeb3-f074-49ee-81e0-5484f12779a4",
+    "val": {
+      "actions": [],
+      "autoSubmit": true,
+      "dollInfo": {
+        "id": "Pink"
+      },
+      "entry": false,
+      "entryId": "Dictation",
+      "error": null,
+      "inputType": "text",
+      "maxLength": 512,
+      "placeholder": "TYPE LETTER HERE",
+      "playerInfo": {
+        "index": 0,
+        "playerIndex": 0,
+        "username": "CIPHER"
+      },
+      "prompt": {
+        "html": "and get on a plane!"
+      },
+      "state": "EnterSingleText"
+    },
+    "version": 24,
+    "from": 1
+  }
+}
+```

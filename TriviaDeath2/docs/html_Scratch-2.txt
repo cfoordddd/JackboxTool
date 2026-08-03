@@ -1,0 +1,13 @@
+<div id="controller-container" class="state-controller controller-page" style="height: 951px; width: 1365px;">
+    <div id="playerRegion"><div class="playerTopBarView Green" style=""><div id="player" class="playerTopBar" style="">
+    <div id="playericon" class="playerIcon" style="display: none;"></div>
+    <div id="playername" class="playerName controller-text" style="">CIPHER</div>
+</div></div></div>
+    <div class="Scratch Green"><div>
+    <canvas id="scratch" class="canvas scratch" width="640" height="880" style="width: 640px; height: 880px;"></canvas>
+    <div class="visuallyhidden">
+    	<img id="Skull" src="https://bundles.jackbox.tv/main/pp6-triviadeath2/triviadeath2/ScratchOffSkull.png">
+    	<img id="Dollar" src="https://bundles.jackbox.tv/main/pp6-triviadeath2/triviadeath2/ScratchOffDollar.png">
+    </div>
+</div></div>
+</div>

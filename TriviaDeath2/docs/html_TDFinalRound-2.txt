@@ -1,0 +1,9 @@
+<div id="controller" class="state-controller controller-content">
+    <div id="prompt" class="prompt text"><div style=""><div class="text"><div>Boats with Sails</div></div></div></div>
+    <div class="error text-danger" style="display: none;"></div>
+    <div id="choicesRegion"><div class="choices"><div class="button-group btn-group btn-block unselected"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="0" data-key="" style="">Galleon</button><button data-action="choose" class="button check-button btn btn-lg unselected"></button></div><div class="button-group btn-group btn-block unselected"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="1" data-key="" style="">Cutter</button><button data-action="choose" class="button check-button btn btn-lg unselected"></button></div><div class="button-group btn-group btn-block unselected"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="2" data-key="" style="">Scow</button><button data-action="choose" class="button check-button btn btn-lg unselected"></button></div><div class="button-group btn-group btn-block submit"><button type="button" class="button choice-button btn btn-lg" data-action="choose" data-index="3" data-key="" style="">Submit none of them.</button><button data-action="choose" class="button check-button btn btn-lg submit"></button></div></div></div>
+    <div id="chosen" class="chosen text"></div>
+    <div class="makeSingleChoiceDone" style="display: none;">
+        <span class="doneText"></span>
+    </div>
+</div>
