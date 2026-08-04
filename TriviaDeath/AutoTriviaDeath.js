@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoTriviaDeath
 // @namespace    https://github.com/cfoordddd/JackboxTool
-// @version      0.3.0
+// @version      0.4.0
 // @description  Trivia Murder Party - Auto Helper
 // @author       cfoordddd
 // @match        https://jackbox.tv/*
@@ -65,7 +65,12 @@
 
     function loadIndex(){
         var TDQuestion = JSON.parse(GM_getResourceText('TDQuestion'))
-        return buildIndex(TDQuestion)
+        var TDFinalRound = JSON.parse(GM_getResourceText('TDFinalRound'))
+
+        var index = new Map()
+        buildIndex(TDQuestion).forEach(function(v, k){ index.set(k, v) })
+        buildIndex(TDFinalRound).forEach(function(v, k){ index.set(k, v) })
+        return index
     }
 
     function injectStyle(){
@@ -82,8 +87,41 @@
     var index = loadIndex()
     var lastPrompt = null
     var lastCorrectSet = null
+    var lastFinalPrompt = null
+    var lastFinalCorrectSet = null
+
+    function tickFinalRound(){
+        var stateEl = document.querySelector('#state-make-many-choices')
+        var promptEl = document.querySelector('#many-text')
+
+        if (!stateEl || stateEl.classList.contains('pt-page-off') || !promptEl) {
+            lastFinalPrompt = null
+            lastFinalCorrectSet = null
+            return false
+        }
+
+        var promptText = normalize(promptEl.textContent)
+        if (promptText !== lastFinalPrompt) {
+            lastFinalPrompt = promptText
+            lastFinalCorrectSet = index.get(promptText)
+
+            if (!lastFinalCorrectSet) {
+                console.warn('[Auto-TD] no answer match for category:', promptEl.textContent.trim())
+            }
+        }
+
+        var buttons = document.querySelectorAll('#make-many-choices-choices button.make-many-choices-button')
+        buttons.forEach(function(btn){
+            var isCorrect = lastFinalCorrectSet ? lastFinalCorrectSet.has(normalize(btn.textContent)) : false
+            btn.classList.toggle(HIGHLIGHT_CLASS, isCorrect)
+        })
+
+        return true
+    }
 
     function tick(){
+        if (tickFinalRound()) return
+
         var stateEl = document.querySelector('#state-make-single-choice')
         var promptEl = document.querySelector('#make-single-choice-text p')
 
