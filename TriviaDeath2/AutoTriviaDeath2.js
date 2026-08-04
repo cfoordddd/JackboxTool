@@ -5,7 +5,7 @@
 // @description  Trivia Murder Party 2 - Auto Helper
 // @author       cfoordddd
 // @match        https://jackbox.tv/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=brave.com
+// @icon         https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/icon.webp
 // @resource     TDQuestion    https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDQuestion.json
 // @resource     TDFinalRound  https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDFinalRound.json
 // @resource     TDDictation   https://raw.githubusercontent.com/cfoordddd/JackboxTool/main/TriviaDeath2/data/TDDictation.json
