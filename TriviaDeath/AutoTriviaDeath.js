@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoTriviaDeath
 // @namespace    https://github.com/cfoordddd/JackboxTool
-// @version      0.2.0
+// @version      0.3.0
 // @description  Trivia Murder Party - Auto Helper
 // @author       cfoordddd
 // @match        https://jackbox.tv/*
@@ -25,6 +25,29 @@
             .replace(/\s+/g, ' ')
             .trim()
             .toLowerCase()
+    }
+
+    var MATH_EXPRESSION_RE = /^(\d+(?:\.\d+)?)\s*([+\-−×xX*÷/])\s*(\d+(?:\.\d+)?)$/
+
+    function parseMathExpression(text){
+        var match = MATH_EXPRESSION_RE.exec(text)
+        if (!match) return null
+
+        var a = parseFloat(match[1])
+        var b = parseFloat(match[3])
+
+        switch (match[2]){
+            case '+': return a + b
+            case '-':
+            case '−': return a - b
+            case '×':
+            case 'x':
+            case 'X':
+            case '*': return a * b
+            case '÷':
+            case '/': return a / b
+            default: return null
+        }
     }
 
     function buildIndex(dataset){
@@ -73,10 +96,17 @@
         var promptText = normalize(promptEl.textContent)
         if (promptText !== lastPrompt) {
             lastPrompt = promptText
-            lastCorrectSet = index.get(promptText)
 
-            if (!lastCorrectSet) {
-                console.warn('[Auto-TD] no answer match for prompt:', promptEl.textContent.trim())
+            var mathResult = parseMathExpression(promptEl.textContent.trim())
+
+            if (mathResult !== null) {
+                lastCorrectSet = new Set([normalize(String(mathResult))])
+            } else {
+                lastCorrectSet = index.get(promptText)
+
+                if (!lastCorrectSet) {
+                    console.warn('[Auto-TD] no answer match for prompt:', promptEl.textContent.trim())
+                }
             }
         }
 
